@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%; padding: 0px; margin: 0px;">
+<head>
+    <title>Demo AWS store</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript, demo">
+    <meta name="author" content="Equipo de plataformas 2022-01">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    #divBar {
+        height: 30px;
+        text-align: center;
+        box-shadow: 2px 6px 5px -1px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 2px 6px 5px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 6px 5px -1px rgba(0,0,0,0.75);
+    }
+    #divFrame {
+        width: 100%;
+        background-color: #F6F6F6;
+        justify-content: center;
+        display: flex;
+    }
+    #divCard {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: white;
+        width: 50%;
+        margin: 30px;
+        box-shadow: 0px 2px 10px -3px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 2px 10px -3px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 2px 10px -3px rgba(0,0,0,0.75);
+    }
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 0em 0em 1em 0em;
+        padding: 0;
+    }
+    #idCardHeader {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    #idCardBody {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #idCardItem {
+        width: 95%;
+        height: 80px;
+        margin: 2px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #idCardIconText {
+        height: 100%;
+        width: 80%;
+        display: flex;
+    }
+    #idCardIconText img {
+        border-radius: 50px;
+        margin-right: 10px;
+        border: 1px solid #555;
+    }
+    h4 #title {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+    #idCardTotal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #idCardTotal h4 {
+        margin: 5px;
+        padding: 5px;
+    }
+    #hrFinal {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0em 0em 0em;
+        padding: 0;
+    }
+    #cardButtonConfirm {
+        display: flex;
+        align-items: center;
+        margin: 2px;
+        justify-content: center;
+        height: 50px;
+    }
+</style>
+<body style="height: 100%; width: 100%; padding: 0px; margin: 0px;">
+    <div id="divBar">
+        <h3>Lista de objetos a comprar</h3>
+    </div>
+    <div id="divFrame">
+        <div id="divCard">
+            <div id="idCardHeader">
+                <h4 id="title" style="margin: 0px;">Fecha: 2022-04-08 16:23 UTC-5</h4>
+                <h4 id="title" style="margin: 0px;">ID de transacción: 18sA81j2T31m9zx1</h4>
+            </div>
+            <hr/>
+            <div id="idCardBody">
+                <div id="idCardItem">
+                    <div id="idCardIconText">
+                        <img src="image/Libro.jpg" alt="libro" width="50" height="50">
+                        <p> Libro de summerville</p>
+                    </div>
+                    <p> $10.00</p>
+                </div>
+                <div id="idCardItem">
+                    <div id="idCardIconText">
+                        <img src="image/cepilloDeDientes.jpg" alt="cepillo de dientes" width="50" height="50">
+                        <p> Cepillo de dientes super lujuso</p>
+                    </div>
+                    <p> $2.90</p>
+                </div>
+                <div id="idCardItem">
+                    <div id="idCardIconText">
+                        <img src="image/Laptop.jpg" alt="laptop" width="50" height="50">
+                        <p> Laptop HP 4GB RAM Core I3 1TB SDD</p>
+                    </div>
+                    <p> $107.35</p>
+                </div>
+                <div id="idCardItem">
+                    <div id="idCardIconText">
+                        <img src="image/alexaEchoDot.jpg" alt="alexa" width="50" height="50">
+                        <p>Alexa echo dot 4 Gen.</p>
+                    </div>
+                    <p> $21.99</p>
+                </div>
+            </div>
+            <hr/>
+            <div id="idCardTotal">
+                <h4>Cantidad total:</h4>
+                <h4>$142.24</h4>
+            </div>
+            <hr id="hrFinal"/>
+            <div id="cardButtonConfirm">
+                <button> Confirmar compra</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
