@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+
+{% block title%}
+Usuario
+{% endblock %}
+
+
+{% block body_content %}
+<div class="container d-flex justify-content-center pt-3">
+    <div 
+        class="bg-light border border-primary rounded d-flex flex-column" 
+        style="width: 65%;"
+    >
+    <div class="d-flex flex-column justify-content-center align-items-center">
+        <h5 class="text-center">Holo</h5>
+        <form action="{{url_for('logout')}}" method="POST" class="d-flex flex-column justify-content-center align-items-center">
+            <div class="mb-3">
+                <label for="fullname" class="form-label">Mi nombre es:</label>
+                <input type="text" class="form-control" name="nickname" id="password" value="{{name}}" readonly>
+            </div>
+            <button type="submit" class="m-3 btn btn-primary" style="width: 35%;" id="login_back">Salir</button>
+        </form>
+    </div>
+    </div>
+</div>
+{% endblock %}

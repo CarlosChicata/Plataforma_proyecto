@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block heading%}
+Hola que tal!
+{% endblock %}
+
+{% block body%}
+   	<h1> In  Session!.</h1>
+	<ul>
+	  {% for name in users %}
+	   <li>{{name}}</li>
+          {% endfor %}
+	</ul>
+{% endblock %}
