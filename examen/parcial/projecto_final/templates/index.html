@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+
+{% block title%}
+!Bienvenido a nuestra pagina¡ 
+{% endblock %}
+
+{% block body_content %}
+<div class="container d-flex justify-content-center pt-3">
+    <div 
+        class="bg-light border border-primary rounded d-flex flex-column" 
+        style="width: 65%;"
+    >
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <h5 class="text-center">Pasa tus credenciales y mira lo nuevos de nosotros </h5>
+            <form action="{{url_for('operation', variable='login')}}" method="post">
+                <button type="submit" class="btn btn-primary" id="login">Login</button>
+            </form>
+        </div>
+        <div class="pt-5 d-flex flex-column justify-content-center align-items-center">
+            <p  style="margin-bottom: 0;">No te registraste?, hazlo ahora</p>
+            <form action="{{url_for('operation', variable='signin')}}" method="post">
+                <button type="submit" class="p-0 btn btn-link" id="signin">Registrate!</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
