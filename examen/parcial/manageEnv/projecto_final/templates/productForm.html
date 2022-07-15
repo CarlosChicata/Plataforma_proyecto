@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+
+{% block title%}
+¡Registra tu producto ahora! 
+{% endblock %}
+
+{% block body_content %}
+<div class="container d-flex justify-content-center pt-3">
+    <div 
+        class="bg-light border border-primary rounded d-flex flex-column" 
+        style="width: 65%;"
+    >
+        <h5 class="text-center">Formulario de producto</h5>
+        <form 
+            action="{{url_for('uploadProduct')}}" 
+            class="d-flex flex-column justify-content-center align-items-center" 
+            enctype="multipart/form-data"
+            method="POST"
+        >
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" name="name" id="name">
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Descripción</label>
+                <input type="text" class="form-control" name="description" id="description">
+            </div>
+            <div class="mb-3">
+                <label for="price" class="form-label">Precio</label>
+                <input type="text" class="form-control" name="price" id="price">
+            </div>
+            <div class="mb-3">
+                <label for="image" class="form-label">Imagen</label>
+                <input type="file" class="form-control" name="image" id="image" accept=".jpg,.jpeg,.png">
+            </div>
+            <button type="submit" class="m-3 btn btn-primary" style="width: 35%;" id="login_back">Registralo</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
